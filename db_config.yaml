@@ -1,0 +1,6 @@
+## A simple database configuration
+database:
+    name: mydb
+    host: localhost
+    port: 5432
+    user: postgres
