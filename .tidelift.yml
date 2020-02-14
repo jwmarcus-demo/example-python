@@ -24,7 +24,7 @@ tests:
 
     # package license is prohibited by settings in licensing section
     license_prohibited:    
-        skip
+        fail
     
     # package is on a version that is marked as inactive
     inactive_stream:
