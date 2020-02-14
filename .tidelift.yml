@@ -34,8 +34,8 @@ tests:
 licensing:
     # Use only one or the other.
     
-    # allowed:
-    #   - AAL
+    allowed:
+        - AAL
     #   - 0BSD
 
     # disallowed:
@@ -45,7 +45,9 @@ licensing:
 
 exceptions:
     # Except a specific package from a policy test
-    # - name:
-    #   platform: rubygems
-    #   tests:
-    #     - license_prohibited
+    - name: bibliothecary
+      platform: rubygems
+      tests:
+        - license_prohibited
+        - vulnerable
+        - inactive_stream
