@@ -1,0 +1,51 @@
+# Example policy configuration
+
+tests:
+
+    # package doesn't seem to exist anymore
+    removed: 
+        skip
+    
+    # package is marked deprecated
+    deprecated:
+        skip
+    
+    # package appears to be unmaintained
+    unmaintained:
+        skip
+    
+    # package has no license
+    unlicensed:
+        skip
+    
+    # package appears to have a security vulnerability
+    vulnerable:
+        skip
+
+    # package license is prohibited by settings in licensing section
+    license_prohibited:    
+        skip
+    
+    # package is on a version that is marked as inactive
+    inactive_stream:
+        skip
+
+
+licensing:
+    # Use only one or the other.
+    
+    # allowed:
+    #   - AAL
+    #   - 0BSD
+
+    # disallowed:
+    #   - AGPL-1.0-or-later
+    #   - AGPL-3.0-only
+    
+
+exceptions:
+    # Except a specific package from a policy test
+    # - name:
+    #   platform: rubygems
+    #   tests:
+    #     - license_prohibited
