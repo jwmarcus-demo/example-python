@@ -20,7 +20,7 @@ tests:
     
     # package appears to have a security vulnerability
     vulnerable:
-        skip
+        fail
 
     # package license is prohibited by settings in licensing section
     license_prohibited:    
@@ -45,7 +45,7 @@ licensing:
 
 exceptions:
     # Except a specific package from a policy test
-    # - name:
-    #   platform: rubygems
-    #   tests:
-    #     - license_prohibited
+    - name: confire
+      platform: pypi
+      tests:
+        - vulnerable
