@@ -49,3 +49,7 @@ exceptions:
       platform: pypi
       tests:
         - vulnerable
+    - name: urllib3
+      platform: pypi
+      tests:
+        - vulnerable
